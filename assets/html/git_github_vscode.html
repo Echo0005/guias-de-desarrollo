@@ -1,66 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Github y VS Code</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="../../index.html">Home</a>
-        </nav>
-        <h1>
-            Github, Git y Visual Studio Code: Clonado y subir Commits desde VS Code.
-        </h1>
-    </header>
-    <main>
-        <div>
-            <h2>Clonado:</h2>
-            <p>
-                El Clonado consiste en traernos/descargarnos un Repositorio Remoto existente. Trabaja a partir del comando <span class="comando">git clone</span> seguido de una URL completa.
-            </p>
-            <p>
-                Paso a paso:
-                <br>
-                Usaremos de ejemplo para la URL el repositorio en Github de las pruebas iniciales del proyecto InterLinked: <b>https://github.com/kevinfonttlizama/Interlinked-base</b>                
-            </p>
-            <ul>
-                <li>
-                    Abrir localmente Git por Consola/Terminal, en la ubicacion que prefiramos.
-                </li>
-                <li>
-                    Utilizaremos el siguiente comando: <span class="comando">git clone https://github.com/kevinfonttlizama/Interlinked-base</span>
-                </li>
-                <li>
-                    Y ya tendremos nuestro Repositorio Remoto clonado.
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2>
-                Commits desde VS Code:
-            </h2>
-            <p>
-                En nuestra Barra Principal lateral (izquierda, dispuesta verticalmente) disponemos del Control de código fuente:
-            </p>
-            <img src="../img/git_github_vscode/vsc_git_panel.webp" alt="Mostrando Barra Princial lateral donde se encuentra el Control de código fuente.">
-            <p>
-                Cuando hagamos una modificacion (y guardemos), podemos proseguir con el Commit y Push:
-            </p>
-            <ul>
-                <li>Al hacer cambios se habilita el boton Confirmar.</li>
-                <li>En el Input, arriba de este boton Confirmar, podemos colocar el Mensaje que tendra nuestro Commit.</li>
-                <li>
-                    En el boton Confirmar, click en su menu desplegable y seleccionamos <span>Hacer "commit" e incertar</span>.
-                </li>
-            </ul>
-            <img src="../img/git_github_vscode/vsc_git_commit.webp" alt="Mostrado boton Confirmar con su menu desplegable.">
-        </div>
-    </main>
-    <footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    </footer>
-</body>
+    <link rel="stylesheet" href="../css/git_github_vscode.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Git Github y VS Code</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <nav>
+            <div class="header__button-container">
+              <a class="header__link" href="../../index.html">Atras</a>
+            </div>
+          </nav>
+          <h1 class="header__title">
+            Github, Git y Visual Studio Code: Clonado y subir Commits desde VS
+            Code
+          </h1>
+        </div>
+      </header>
+      <main>
+        <div class="section">
+          <h2>Clonado:</h2>
+          <p>
+            El Clonado consiste en traernos/descargarnos un Repositorio Remoto
+            existente. Trabaja a partir del comando
+            <span class="comando">git clone</span> seguido de una
+            <span class="comando">URL</span> completa.
+          </p>
+          <h3>Paso a paso:</h3>
+          <p>
+            Usaremos de ejemplo para la URL, el repositorio en Github de las
+            pruebas iniciales del proyecto InterLinked:
+          </p>
+          <p>
+            Link: <b>https://github.com/kevinfonttlizama/Interlinked-base</b>
+          </p>
+          <ul>
+            <li>
+              Abrir localmente Git por Consola/Terminal, en la ubicacion que
+              prefiramos.
+            </li>
+            <li>
+              Utilizaremos el siguiente comando:
+              <span class="comando"
+                >git clone
+                https://github.com/kevinfonttlizama/Interlinked-base</span
+              >
+            </li>
+            <li>Y ya tendremos nuestro Repositorio Remoto clonado.</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Commits desde VS Code:</h2>
+          <p>
+            En nuestra Barra Principal lateral (izquierda, dispuesta
+            verticalmente) disponemos del <b>Control de código fuente</b>:
+          </p>
+          <div class="img-container">
+            <img
+              class="img"
+              src="../img/git_github_vscode/vsc_git_panel.webp"
+              alt="Mostrando Barra Princial lateral donde se encuentra el Control de código fuente."
+            />
+          </div>
+          <p>
+            Cuando hagamos una modificacion (y guardemos), podemos proseguir con
+            el Commit y Push:
+          </p>
+          <ul>
+            <li>Al hacer cambios se habilita el boton <b>Confirmar</b>.</li>
+          </ul>
+
+          <div class="img-container">
+            <img
+              class="img"
+              src="../img/git_github_vscode/vsc_git_commit.webp"
+              alt="Mostrado boton Confirmar con su menu desplegable."
+            />
+          </div>
+
+          <ul>
+            <li>
+              En el Input, arriba de este boton <b>Confirmar</b>, podemos
+              colocar el Mensaje que tendra nuestro Commit.
+            </li>
+            <li>
+              En el boton <b>Confirmar</b>, click en su menu desplegable y
+              seleccionamos
+              <span class="spam-text">Hacer "commit" e incertar</span>.
+            </li>
+          </ul>
+
+          <p>
+            Y ya tendremos el Commit y Push (subir al Repositorio Remoto) realizados.
+          </p>
+
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>
