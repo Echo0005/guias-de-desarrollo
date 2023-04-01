@@ -1,0 +1,97 @@
+/* Aqui estaran los estilos de los elementos mas comunes de los HTML's. */
+
+
+/* Background para las Guias: */
+.guia-bg
+{
+    background-image: url(https://wallpapercave.com/wp/wp7043567.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Padding al contenedor padre: */
+.guia-p
+{
+    padding: 1em 0;
+}
+
+
+/*
+    Fuente de Google Fonts:
+
+        Link's necesarios:
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+*/
+.font
+{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Estilo a los Span */
+.comando
+{
+    background-color: rgb(0, 53, 133);
+    padding: 0 5px 0 5px;
+    font-weight: bold;
+    border-radius: 0.23em;
+}
+
+
+/* Fondo traslucido gris para el area de lectura: */
+.container
+{
+    background-color: rgba(170, 170, 170, 0.418);
+    margin: 0em 5em;
+    padding: 2em 3em;
+    border-radius: 1em;
+}
+
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Boton "Back": */
+.link-button
+{
+    text-decoration: none;
+    background-color: rgb(0, 62, 119);
+    color: rgb(255, 255, 255);
+    padding: 0.77em;
+    border: 2px solid #0044ff;
+    border-radius: 1em;
+}
+.link-button:hover
+{
+    background-color: rgb(0, 132, 255);
+    color: rgb(0, 0, 0);
+    padding: 0.77em;
+    border: 2px solid #9dcbff;
+    border-radius: 1em;
+}
+
+
+
+
+.m-1
+{
+    margin: 1em;
+}
+.m-2
+{
+    margin: 2em;
+}
+
+.p-1
+{
+    padding: 1em;
+}
