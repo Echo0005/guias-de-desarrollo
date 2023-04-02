@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/git_vscode_stage_commit_push.css">
     <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/git_vscode_stage_commit_push.css">    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,15 +18,15 @@
 <body>
     
     <div class="guia-bg guia-p">
-        <div class="container font main">
-            <div class="header">
+        <div class="container font">
+            <div>
                 <header>
                     <nav>
                         <div class="flex-center">
                             <a class="link-button" href="../../index.html">Atras</a>
                         </div>
                     </nav>
-                    <h1>
+                    <h1 class="text-center">
                         Git: Stage, Commit y Push en VS Code
                     </h1>
                     <p>
@@ -38,79 +38,84 @@
             <div>
                 <main>
                     
-                    <section>
-                        <h2>
-                            Stage:
-                        </h2>
+                    <div class="section">
+                        <section>
+                            <h2 class="section__title text-center">
+                                Stage
+                            </h2>
+            
+                            <p>
+                                Consiste en una <b>área de preparación</b>, todos los cambios (archivos modificados) son colocados en un <b>Stage</b>, antes de mandarlos a <b>Commit</b>. En pocas palabras, un Stage es una caja abierta donde vamos colocando los Cambios y siendo el Commit el momento de cerrar dicha caja para almacenarla.
+                            </p>
+            
+                            <h3>
+                                Pasando modificaciones a Stage:
+                            </h3>
+            
+                            <p>
+                                En Visual Studio Code contamos con el <b>Control de código fuente</b>:
+                            </p>
+            
+                            <div class="flex-center m-2">
+                                <img
+                                    src="https://i.ibb.co/KyjxRQm/vsc-git-panel.webp"
+                                    alt="Mostrando Barra Princial lateral donde se encuentra el Control de código fuente."
+                                />
+                            </div>
+            
+                            <p>
+                                Al realizar una modicacion de un archivo y guardarlo, veremos en el <b>Control de código fuente</b>, en la seccion <span class="comando">Cambios</span>, los archivos que podemos pasar a Stage. Debemos hacer click en el <span class="comando">+</span> :
+                            </p>
+            
+            
+                            <div class="flex-center m-2">
+                                <img src="https://i.ibb.co/k4TmcPW/1-stage-add.webp" alt="">
+                            </div>
+            
+                            <p>
+                                Y ya dispondremos de los cambios en Stage:
+                            </p>
         
-                        <p>
-                            Consiste en una <b>área de preparación</b>, todos los cambios (archivos modificados) son colocados en un <b>Stage</b>, antes de mandarlos a <b>Commit</b>. En pocas palabras, un Stage es una caja abierta donde vamos colocando los Cambios y siendo el Commit el momento de cerrar dicha caja para almacenarla.
-                        </p>
-        
-                        <h3>
-                            Pasando modificaciones a Stage:
-                        </h3>
-        
-                        <p>
-                            En Visual Studio Code contamos con el <b>Control de código fuente</b>:
-                        </p>
-        
-                        <div class="flex-center m-2">
-                            <img
-                                class="img"
-                                src="https://i.ibb.co/KyjxRQm/vsc-git-panel.webp"
-                                alt="Mostrando Barra Princial lateral donde se encuentra el Control de código fuente."
-                            />
-                        </div>
-        
-                        <p>
-                            Al realizar una modicacion de un archivo y guardarlo, veremos en el <b>Control de código fuente</b>, en la seccion <span class="comando">Cambios</span>, los archivos que podemos pasar a Stage. Debemos hacer click en el <span class="comando">+</span> :
-                        </p>
-        
-        
-                        <div class="flex-center m-2">
-                            <img src="https://i.ibb.co/k4TmcPW/1-stage-add.webp" alt="">
-                        </div>
-        
-                        <p>
-                            Y ya dispondremos de los cambios en Stage:
-                        </p>
+                            <div class="flex-center m-2">
+                                <img src="https://i.ibb.co/RcSBK1Y/2-stage-confirm.webp" alt="">
+                            </div>
+                        </section>
+                    </div>
     
-                        <div class="flex-center m-2">
-                            <img src="https://i.ibb.co/RcSBK1Y/2-stage-confirm.webp" alt="">
-                        </div>
-                    </section>
+                    <div class="section">
+                        <section>
+                            <h2 class="section__title text-center">
+                                Commit
+                            </h2>
+                            <p>
+                                El <b>Commit</b> lo llevamos a cabo con el boton <b>Confirmarción</b>. Arriba de este boton tendremos un Input para colocar el <b>Mensaje</b> de nuestro Commit:
+                            </p>
+        
+                            <div class="flex-center m-2">
+                                <img src="https://i.ibb.co/DC2p4JR/3-commit-apply.webp" alt="">
+                            </div>
+                        </section>
+                    </div>
     
-                    <section>
-                        <h2>
-                            Commit:
-                        </h2>
-                        <p>
-                            El <b>Commit</b> lo llevamos a cabo con el boton <b>Confirmarción</b>. Arriba de este boton tendremos un Input para colocar el <b>Mensaje</b> de nuestro Commit:
-                        </p>
-    
-                        <div class="flex-center m-2">
-                            <img src="https://i.ibb.co/DC2p4JR/3-commit-apply.webp" alt="">
-                        </div>
-                    </section>
-    
-                    <section>
-                        <h2>
-                            Push:
-                        </h2>
-    
-                        <p>
-                            El <span class="comando">Push</span> sube todos los cambios al Repositorio Remoto.
-                        </p>
-    
-                        <p>
-                            Una vez que tengamos <b>al menos</b> un <b>Commit</b>, disponemos del boton <span class="comando">Sincronizar cambios</span> para realizar el <span class="comando">Push</span> :
-                        </p>
-    
-                        <div class="flex-center m-2">
-                            <img src="https://i.ibb.co/4mcMgrN/4-push.webp" alt="">
-                        </div>
-                    </section>     
+                    <div class="section">
+                        <section>
+                            <h2 class="section__title text-center">
+                                Push
+                            </h2>
+        
+                            <p>
+                                El <span class="comando">Push</span> sube todos los cambios al Repositorio Remoto.
+                            </p>
+        
+                            <p>
+                                Una vez que tengamos <b>al menos</b> un <b>Commit</b>, disponemos del boton <span class="comando">Sincronizar cambios</span> para realizar el <span class="comando">Push</span> :
+                            </p>
+        
+                            <div class="flex-center m-2">
+                                <img src="https://i.ibb.co/4mcMgrN/4-push.webp" alt="">
+                            </div>
+                        </section> 
+                    </div>    
                     
                 </main>
             </div>

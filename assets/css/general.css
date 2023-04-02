@@ -27,19 +27,9 @@
 */
 .font
 {
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(255, 255, 255);
-}
-
-
-/* Estilo a los Span */
-.comando
-{
-    background-color: rgb(0, 53, 133);
-    padding: 0 5px 0 5px;
-    font-weight: bold;
-    border-radius: 0.23em;
 }
 
 
@@ -47,39 +37,87 @@
 .container
 {
     background-color: rgba(170, 170, 170, 0.418);
+    border-radius: 1em;
     margin: 0em 5em;
     padding: 2em 3em;
-    border-radius: 1em;
-}
-
-
-.flex-center
-{
-    display: flex;
-    justify-content: center;
 }
 
 
 /* Boton "Back": */
 .link-button
 {
-    text-decoration: none;
     background-color: rgb(0, 62, 119);
-    color: rgb(255, 255, 255);
-    padding: 0.77em;
     border: 2px solid #0044ff;
     border-radius: 1em;
+    color: rgb(255, 255, 255);
+    padding: 0.77em;
+    text-decoration: none;    
 }
+/* Boton "Back" cuando el Cursor este arriba: */
 .link-button:hover
 {
     background-color: rgb(0, 132, 255);
-    color: rgb(0, 0, 0);
-    padding: 0.77em;
     border: 2px solid #9dcbff;
     border-radius: 1em;
+    color: rgb(0, 0, 0);
+    padding: 0.77em;    
 }
 
 
+/* Estilos a cada Seccion: */
+.section
+{
+    border: 2px solid rgba(255, 255, 255, 0.288);
+    border-radius: 1em;
+    margin: 5em 0;
+    padding: 0 1em 1.4em 1em;    
+}
+/* Modificion leve al que sea el Ultimo Section en el HTML: */
+.section:last-child
+{
+    margin: 5em 0 0 0;
+}
+
+
+/* Titulos de las secciones: Centrado del texto y espaciado. */
+.section__title
+{
+    margin: 1.4em 0;
+}
+
+
+/* Centrado de textos */
+.text-center
+{
+    text-align: center;
+}
+
+
+/* Pad top y bottom para el texto de los <p> </p> */
+.text-pad
+{
+    line-height: 1.4em;
+}
+
+
+/* Estilo a los Span */
+.comando
+{
+    background-color: rgb(0, 53, 133);
+    border-radius: 0.23em;
+    font-weight: bold;
+    padding: 0 5px;    
+}
+
+
+
+
+/* Flexbox para centrado de elemento */
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+}
 
 
 .m-1
