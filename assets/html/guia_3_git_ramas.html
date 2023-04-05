@@ -1,20 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Branch</title>
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/guia_3_branch.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="guia-bg guia-p">
+      <div class="container font">
+        <div>
+          <header>
+            <nav>
+              <div class="flex-center">
+                <a class="link-button" href="../../index.html">Atras</a>
+              </div>
+            </nav>
 
-</head>
-<body>
-    
-</body>
+            <h1 class="text-center">Branch (Rama): Teoria, Codigo y Trabajo</h1>
+          </header>
+        </div>
+
+        <div>
+          <main>
+            <div class="section">
+              <section>
+                <h2 class="section__title text-center">Teoria</h2>
+                <div class="flex-center">
+                  <p class="text-pad">
+                    Ramas o Versiones. Permiten tener varias versiones de un
+                    mismo proyecto al mismo tiempo.
+                    <br /><br />
+                    Un Proyecto Git por default cuenta con una
+                    <b>Rama Principal</b>, llamada <b>master</b> o tambien
+                    <b>main</b> y es de donde partiran todas las demas
+                    <b>Ramas</b> que creemos. <br /><br />
+                    En pocas palabras, una <b>Rama</b> parte de la
+                    <b>Rama Principal</b> (conteniendo todo lo que haya en
+                    <b>Principal</b>: archivos y <b>commit's</b> realizados)
+                    para convertirse en un <b>Desarrollo Independiente</b> de la
+                    <b>Rama Principal</b>. A partir de aquí, todo lo que hagamos
+                    en ambas ramas, ninguna tendra los cambios (add's, modify's,
+                    delete's) de la otra, seran desarrollos independientes.
+                    <br /><br />
+                    Nos permiten tener un mayor control de "bloques de cambios",
+                    cuando decidimos incorporar a la <b>Rama Principal</b> y
+                    cuando retirarlos para revertir cambios. Mientras un
+                    <b>Commit</b> es un Cambio, una <b>Rama</b> es un conjunto
+                    de Commit's. <br /><br />
+                    En un entorno de Equipo, las <b>Ramas</b> permiten separar
+                    el trabajo de cada uno de los integrantes, para luego ir
+                    incorporando cada <b>Rama</b> por separado a la
+                    <b>Rama Principal</b>. Permitiendo retirar una rama por el
+                    criterio que sea (algun bug, etc), continuar trabajando en
+                    la rama para luego reinsertar nuevamente nuestra
+                    <b>Rama</b> a la <b>Rama Principal</b>. <br /><br />
+                    Sin las <b>Ramas</b>, tendriamos tan solo una
+                    <b>Rama Principal</b> con todo tipo de Commit's de muchas
+                    personas, dificultando la lectura del Historial y la
+                    comprobacion para encontrar un problema. <br /><br />
+                    Un Proyecto en Git, con <b>Ramas</b> permite ser mas
+                    administrable cuando mas crece el proyecto y ayudando a
+                    dividir y evaluar mejor el trabajo de cada uno de los
+                    integrantes del equipo.
+                  </p>
+                </div>
+              </section>
+            </div>
+
+            <div class="section">
+                <section>
+                  <h2 class="section__title text-center">Codigo</h2>
+                  <div>
+                    <ul class="section__ul">
+                        <li class="section__li">Ver ramas: <span class="comando">git branch</span></li>
+                        <li class="section__li">Crear rama: <span class="comando">git branch nombre-de-rama</span></li>
+                        <li class="section__li">Renombrar rama: <span class="comando">git branch -m nombre-antiguo-rama nombre-nuevo-rama</span></li>
+                        <li class="section__li">Seleccionar / Posicionarse en / Cambiar de rama: <span class="comando">git checkout nombre-de-rama</span></li>
+                        <li class="section__li">Borrar rama: <span class="comando">git branch -d nombre-de-rama</span> (debemos estar situados/posicionados en otra rama que no sea la que vamos a borrar)</li>
+                    </ul>
+                  </div>
+                </section>
+            </div>
+
+            <div class="section">
+                <section>
+                  <h2 class="section__title text-center">Trabajo</h2>
+                  <div class="">
+                    <p>
+                        Para comenzar a trabajar en una <b>Rama</b>, debemos Seleccionar o Posicionarnos en la rama.
+                        <br><br>
+                        Todas las modificaciones, archivos creados y eliminados, pasaran a ser de nuestra <b>Rama</b> una vez les hagamos <b>Commit</b> (mientras estamos posicionados en nuestra <b>Rama</b>).
+                        <br><br>
+                        Al volver a la <b>Rama Principal</b> podemos notar que los cambios que mandamos a <b>Commit</b> en la otra <b>Rama</b>
+                        nunca se produjeron en <b>Rama Principal</b>.                        
+                    </p>
+                    <p class="p-advertence">
+                        Se recomienda ser Concientes sobre en que <b>Rama</b> estamos trabajando para evitar problemas innecesarios (deshacer cambios, cambiar de rama, modificar lo que queriamos ahora si en la Rama esperada...).
+                    </p>
+                  </div>
+                </section>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
