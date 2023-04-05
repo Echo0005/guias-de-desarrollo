@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Guias de desarrollo</title>
-</head>
-<body>
+  </head>
+  <body class="index-bg font">
     <header>
-        <div class="container-title">
-            <h1 class="container-title__title">
-                Guias de desarrollo:
-            </h1>
-        </div>
+      <div class="flex-center">
+        <h1 class="main-title">Guias de desarrollo:</h1>
+      </div>
     </header>
-    <main>
-        <div class="list">
-            <ul class="list__ul">
-                <li class="list__li">
-                    <a class="list__link" href="./assets/html/guia_1_git_github_vscode.html">Github, Git y Visual Studio Code: Clonado y subir Commits desde VS Code</a>
-                </li>
-                <li class="list__li">
-                    <a class="list__link" href="./assets/html/guia_2_git_vscode_stage_commit_push.html">Git: Stage, Commit y Push en VS Code</a>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <footer>
 
-    </footer>
-</body>
+    <div>
+      <div class="module">
+        <h2 class="module__title">Git</h2>
+
+        <ul class="list__ul">
+          <li class="list__li">
+            <a
+              class="list__link"
+              href="./assets/html/guia_1_git_github_vscode.html"
+              >Github y Visual Studio Code: Clonado y subir Commits desde
+              VS Code</a
+            >
+          </li>
+          <li class="list__li">
+            <a
+              class="list__link"
+              href="./assets/html/guia_2_git_vscode_stage_commit_push.html"
+              >Stage, Commit y Push en VS Code</a
+            >
+          </li>
+          <li class="list__li">
+            <a class="list__link" href="./assets/html/guia_3_git_ramas.html"
+              >Branche's (Ramas)</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
 </html>
