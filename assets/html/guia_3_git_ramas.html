@@ -19,7 +19,8 @@
   </head>
   <body>
     <div class="guia-bg guia-p">
-      <div class="container font">
+      <div class="container font footer-fix-pad">
+
         <div>
           <header>
             <nav>
@@ -89,6 +90,8 @@
                         <li class="section__li">Renombrar rama: <span class="comando">git branch -m nombre-antiguo-rama nombre-nuevo-rama</span></li>
                         <li class="section__li">Seleccionar / Posicionarse en / Cambiar de rama: <span class="comando">git checkout nombre-de-rama</span></li>
                         <li class="section__li">Borrar rama: <span class="comando">git branch -d nombre-de-rama</span> (debemos estar situados/posicionados en otra rama que no sea la que vamos a borrar)</li>
+                        <li class="section__li">Ver diferencias entre ramas: <span class="comando">git diff nombre-rama-1 nombre-rama-2</span></li>
+                        <li class="section__li">Fusionar ramas: <span class="comando">git merge nombre-rama-a-fusionar nombre-rama-destino</span> (debemos estar situados/posicionados en la rama destino)</li>
                     </ul>
                   </div>
                 </section>
@@ -109,11 +112,24 @@
                     <p class="p-advertence">
                         Se recomienda ser Concientes sobre en que <b>Rama</b> estamos trabajando para evitar problemas innecesarios (deshacer cambios, cambiar de rama, modificar lo que queriamos ahora si en la Rama esperada...).
                     </p>
+                    <p>
+                        Al momento de fusionar dos <b>Ramas</b> con un <b>merge</b>, debemos realizar un <b>commit</b>.
+                    </p>
                   </div>
                 </section>
             </div>
           </main>
         </div>
+
+        <div class="footer">
+            <footer>
+                <b>
+                    · Fuente: <a class="footer__link" href="https://www.youtube.com/playlist?list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW" target="_blank">TodoCode Curso Git</a> (videos 6 y 7) ·
+                </b>
+            </footer>
+        </div>
+
+
       </div>
     </div>
   </body>
