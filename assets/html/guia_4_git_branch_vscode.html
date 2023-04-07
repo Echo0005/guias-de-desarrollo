@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Branch en VS Code</title>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="guia-bg guia-p">
+      <div class="container font">
+        <div>
+          <header>
+            <nav>
+              <div class="flex-center">
+                <a class="link-button" href="../../index.html">Atras</a>
+              </div>
+            </nav>
+
+            <h1 class="text-center">Branch en VS Code</h1>
+
+            <p>
+                En esta guia veremos brevemente como <b>crear</b> una Rama en la interfaz de VS Code y a realizar un <b>merge</b> entre ramas.
+            </p>
+          </header>
+        </div>
+
+        <div>
+          <main>
+            <div class="section">
+              <section>
+                <h2 class="section__title text-center">Creando una Branch</h2>
+                <div class="">
+                  <p class="text-pad">
+                    Contamos con 2 formas de crear una Rama: desde la Consola/Terminal con Git y desde la UI de VS Code.
+                  </p>
+                  <h3>
+                    Desde linea de comando en Git:
+                  </h3>
+                  <p>
+                    Comandos disponibles en la guia anterior: <a class="footer__link" href="../html/guia_3_git_ramas.html" target="_blank">Ramas</a>
+                  </p>
+                  <h3>
+                    Desde la UI de VS Code:
+                  </h3>
+                  <p>
+                    A travez de la extencion de GitLens, vamos a <b>branches</b>:
+                  </p>
+                  <p>
+                    Click en <span class="comando">+</span> para crear rama:
+                  </p>
+                  <div class="flex-center m-2"><img src="https://i.ibb.co/X5BngQH/1.webp" alt=""></div>
+                  <p>
+                    VS Code nos pedira un nombre:
+                  </p>
+                  <div class="flex-center m-2"><img src="https://i.ibb.co/KV2pr9Q/2.webp" alt=""></div>
+                  <p>
+                    VS Code nos pide con que accion proseguir. Si creamos o creamos y que nos cambie a la rama nueva:
+                  </p>
+                  <div class="flex-center m-2"><img src="https://i.ibb.co/0hNKmMp/3.webp" alt=""></div>
+                  <p>
+                    Para comenzar a trabajar en nuestra <b>Rama</b>, debemos cambiar a ella:
+                  </p>
+                  <div class="flex-center m-2"><img src="https://i.ibb.co/jGGFVcr/4.webp" alt=""></div>
+                  <p>
+                    Y <b>Publicamos</b> nuestra <b>Rama</b> para que quede en Github.
+                  </p>
+                  <div class="flex-center m-2"><img src="https://i.ibb.co/RcmgRMz/5.webp" alt=""></div>
+                  <p>
+                    Ahora podemos continuar normalmente. Seguir trabajando, creando <b>Commit's</b>, etc, todo quedara en nuestra <b>Rama</b> seleccionada.
+                  </p>               
+                </div>
+              </section>
+            </div>
+
+            <div class="section">
+              <section>
+                <h2 class="section__title text-center">Merge: Fusionar Ramas</h2>
+                <div class="">
+                  <p>
+                    Debemos cambiarnos a otra <b>Rama</b> (normalmente nos situaremos sobre la rama destino que obtendra los cambios):
+                  </p>
+                  <div class="flex-center m-2"><img src="https://i.ibb.co/64ZNYCJ/6.webp" alt=""></div>
+
+                  <p class="text-pad">
+                    Aquí la UI de VS Code no nos proporciona facilidades, debemos optar por la Consola/Terminal.
+                  </p>
+
+                  <p>
+                    Utilizamos el siguiente comando: <span class="comando">git merge rama-prueba main</span> .
+                  </p>
+                </div>
+              </section>
+            </div>
+
+            <div class="section">
+              <section>
+                <h2 class="section__title text-center">Notas</h2>
+                <div class="">
+                  <p>
+                    Las Ramas mas actualizadas apareceran mas arriba en la lista de <span class="comando">branches</span> de GitLens. Nos permite tener conciencia del estado de cada rama. La ultima rama en la que trabajemos queda arriba, al volver a <b>Rama main</b> y realizar un <b>merge</b>, <b>main</b> quedara arriba de todas.
+                  </p>
+                </div>
+              </section>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
