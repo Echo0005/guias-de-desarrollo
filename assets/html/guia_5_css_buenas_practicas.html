@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="guia-bg guia-p">
-      <div class="container font footer-fix-pad">
+      <div class="container font">
         <div>
           <header>
             <nav>
@@ -28,32 +28,101 @@
               </div>
             </nav>
 
-            <h1 class="text-center">
-              
-            </h1>
+            <h1 class="text-center">CSS: Buenas Practicas</h1>
 
             <p class="text-pad">
-              
+              Las buenas practicas nos permiten un desarrollo mas organizado en
+              cualquier ambiente. En CSS nos permitira tener un codigo mas:
+              <b>mantenible</b> (a la hora de hacer modificaciones),
+              <b>legible</b> (para nosotros y otras personas) y
+              <b>velocidad de trabajo</b>.
             </p>
-
           </header>
         </div>
 
         <div>
           <main>
+
+            <div class="section">
+                <section>
+                  <h2 class="section__title text-center">Uso de Class</h2>
+                  <p class="text-pad">
+                    El uso de las clases en CSS es uno de los primeros cambios radicales. Nos puede costar al principio pero mas adelante nunca mas dejaremos de usarlas por su versatilidad y los problemas que nos puede ahorrar.
+                  </p>
+                  <p>
+                    La abstraccion es la clave.
+                  </p>
+                  <h3>
+                    Para tener en cuenta:
+                  </h3>
+                  <p>
+                    Nunca dejar una Class asignada en el <b>html</b> la cual nunca ocupemos.
+                  </p>
+                  <p>
+                    Evitar sobrecargar una Class con muchas Propiedades las cuales podriamos asignar a un Class mas especifico.
+                  </p>
+                  <p class="text-pad">
+                    Si vemos que una Propiedad se repite en mas de una Class, debemos evaluar para crear una Class que lleve tal codigo que se repita. Esto nos permite escribir menos codigo CSS y usar una Class mas seguidamente en <b>html</b>. Un ejemplo recurrente puede ser la Propiedad CSS <span class="comando">display: flex;</span>, una clase llamada por ejemplo <span class="comando">flex</span> podria llevar tal propiedad y ya en el <b>html</b> asignamos varios Class a una misma etiqueta.
+                  </p>
+                </section>
+              </div>
+
+            <div class="section">
+                <section>
+                  <h2 class="section__title text-center">Uso de Archivos Externos</h2>
+                  <p class="text-pad text-center">
+                      Utilizar archivos.<b>css</b> nos permite tener un <b>html</b> mas limpio y un <b>css</b> mas facil de ubicar. Si generamos un archivo.<b>css</b> separado para cada asunto, potenciamos mas sus beneficios ante la <b>gestion</b>.
+                  </p>
+                  <p>
+  
+                  </p>
+                </section>
+              </div>
+
+            
+
             <div class="section">
               <section>
                 <h2 class="section__title text-center">
-
+                  Ordenar Propiedades CSS
                 </h2>
+                <p>
+                    Consiste en ordenar las propiedades CSS por orden alfabetico.
+                </p>
                 <p class="text-pad text-center">
-
+                    <pre>
+                        <code>
+.ejemplo {
+    border: 2px solid rgba(255, 255, 255, 0.288);
+    border-radius: 1em;
+    margin: 5em 0;
+    padding: 0 1em 1.4em 1em;  
+}
+                        </code>
+                    </pre>
+                </p>
+                <p>
+                    A la hora de leer propiedades, alfabeticamente las ubicaremos mas rapido.
                 </p>
               </section>
             </div>
+
+            <div class="section">
+              <section>
+                <h2 class="section__title text-center">
+                  Ordenar Class segun orden en HTML
+                </h2>
+                <p class="text-pad text-center">
+                    Consiste en ordenar las clases en el archivo.<b>css</b> segun sean utilizados.
+                </p>
+                <p class="text-pad text-center">
+                    Por ejemplo, si en el <b>html</b> la primera clase utilizada es <span class="comando">title</span>, la primera clase que figurara en el archivo.<b>css</b> sera <span class="comando">title</span> y así sucesivamente. Esto permite una correlacion de lectura: el orden que vemos las Class en el <b>html</b>, sera el mismo que encontraremos en el archivo.<b>css</b>.
+                </p>
+              </section>
+            </div>
+
           </main>
         </div>
-
       </div>
     </div>
   </body>
